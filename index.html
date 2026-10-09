@@ -195,6 +195,20 @@ footer .fine{font-size:.72rem;color:var(--muted)}
   .segs{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
 .hero .keyfacts{grid-template-columns:repeat(2,minmax(0,1fr))}
+.opps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.opp{border:1px solid var(--line);border-radius:16px;padding:24px;display:grid;gap:12px;align-content:start;background:var(--card);min-width:0}
+.opp.rec{border-color:var(--plum-soft)}
+.opp .n{font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;color:var(--magenta);font-weight:500}
+.opp h3{font-size:1.6rem}
+.opp p{font-size:.9rem;color:var(--muted)}
+.opp dl{margin:0;display:grid;gap:8px;font-size:.88rem}
+.opp dl div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;border-top:1px solid var(--line);padding-top:8px}
+.opp dt{color:var(--muted);font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;padding-top:2px}
+.opp dd{margin:0}
+.callout{background:var(--paper);border-radius:14px;padding:20px 22px;display:grid;gap:8px;font-size:.92rem}
+.callout b{color:var(--plum)}
+.subhead{font-family:var(--display);font-size:1.7rem;color:var(--plum);font-weight:500;margin-top:18px;padding-top:22px;border-top:1px dashed var(--line)}
+@media (max-width:680px){.opps{grid-template-columns:minmax(0,1fr)}.opp dl div{grid-template-columns:minmax(0,1fr);gap:2px}}
 </style>
 
 </head>
@@ -208,15 +222,43 @@ footer .fine{font-size:.72rem;color:var(--muted)}
 <section class="hero">
   <div class="eyebrow">Proposta Comercial · Carol Barreto, Nutricionista</div>
   <h1>Mais pacientes chegando, <em>e mais pacientes voltando.</em></h1>
-  <p class="lead">Um plano em duas fases. Primeiro, ampliamos quem conhece o seu trabalho: Instagram mais estratégico e novos canais que colocam você na frente de públicos que ainda não te encontraram. Depois, organizamos a sua base de pacientes para que cada um receba a mensagem certa, no momento certo.</p>
+  <p class="lead">Preparamos duas oportunidades para você. A primeira é um plano recorrente que cuida do caminho inteiro: ampliar quem conhece o seu trabalho e organizar a sua base para que cada paciente receba a mensagem certa, no momento certo. A segunda é um estudo de um mês da sua base de pacientes, com diagnóstico completo e um plano de próximos passos.</p>
   <div class="keyfacts">
-    <div><span>Fase 1</span><b>Atrair novos pacientes</b></div>
-    <div><span>Fase 2</span><b>Fazer os pacientes voltarem</b></div>
+    <div><span>Oportunidade 1 · Recorrente</span><b>Atrair novos pacientes e fazê-los voltar</b></div>
+    <div><span>Oportunidade 2 · 1 mês</span><b>Estudo da oportunidade na base de pacientes</b></div>
   </div>
 </section>
 
 <section>
-  <div class="eyebrow">A lógica do plano</div>
+  <div class="eyebrow">Duas oportunidades</div>
+  <h2>Escolha por onde começar</h2>
+  <div class="opps">
+    <div class="opp rec">
+      <span class="n">Oportunidade 1 · Recomendada</span>
+      <h3>Plano recorrente</h3>
+      <p>Aquisição e fidelização trabalhando juntas, com a marca falando uma língua só em todos os pontos de contato.</p>
+      <dl>
+        <div><dt>Escopo</dt><dd>Fase 1, atrair novos pacientes, e Fase 2, fazer os pacientes voltarem</dd></div>
+        <div><dt>Formato</dt><dd>Mensal, com a Vincla acompanhando a execução</dd></div>
+      </dl>
+    </div>
+    <div class="opp">
+      <span class="n">Oportunidade 2</span>
+      <h3>Estudo da oportunidade na base de pacientes</h3>
+      <p>Um mês de consultoria de CRM: entendemos a sua base, classificamos os pacientes e entregamos um dossiê de próximos passos.</p>
+      <dl>
+        <div><dt>Escopo</dt><dd>Análise da base atual e de quem já te procurou, sem mexer nos demais canais</dd></div>
+        <div><dt>Formato</dt><dd>Projeto pontual de 1 mês, para você seguir sozinha ou com a gente</dd></div>
+      </dl>
+    </div>
+  </div>
+  <div class="callout">
+    <p><b>Por que recomendamos a Oportunidade 1:</b> a fidelização não funciona sozinha. Se a taxa de saída de pacientes for maior que a taxa de entrada, a receita cai mesmo com uma base bem cuidada. Por isso o plano recorrente amarra a entrada de novos pacientes com o cuidado de quem já chegou.</p>
+  </div>
+</section>
+
+<section>
+  <div class="eyebrow">Oportunidade 1 · Plano recorrente</div>
   <h2>Do primeiro contato à próxima consulta</h2>
   <p class="lead">O paciente não separa a sua marca em canais, e nós também não. O trabalho cobre o caminho inteiro, com um indicador em cada etapa.</p>
   <div class="flowbar"></div>
@@ -228,7 +270,7 @@ footer .fine{font-size:.72rem;color:var(--muted)}
 </section>
 
 <section>
-  <div class="eyebrow">Fase 1</div>
+  <div class="eyebrow">Oportunidade 1 · Fase 1</div>
   <h2>Ampliar a audiência e trazer novos pacientes</h2>
   <p class="lead">O Instagram é a base, mas não é o único canal. Conseguimos trabalhar outros pontos de contato para que você seja conhecida.</p>
   <div class="channels">
@@ -256,7 +298,7 @@ footer .fine{font-size:.72rem;color:var(--muted)}
 </section>
 
 <section>
-  <div class="eyebrow">Fase 2</div>
+  <div class="eyebrow">Oportunidade 1 · Fase 2</div>
   <h2>Trabalhar a base de pacientes como fidelização</h2>
   <p class="lead">A base começa a ser cadastrada já no mês 1. Quando ela tiver volume, passamos a usá-la para entender comportamentos e agir de forma diferente com cada perfil.</p>
   <h3>Perfis por comportamento</h3>
@@ -272,7 +314,7 @@ footer .fine{font-size:.72rem;color:var(--muted)}
 </section>
 
 <section>
-  <div class="eyebrow">Como vamos medir</div>
+  <div class="eyebrow">Oportunidade 1 · Como vamos medir</div>
   <h2>Indicadores de sucesso</h2>
   <p class="lead"><a href="https://studiovincla.github.io/modelo-painel/" target="_blank" rel="noopener">Modelo de painel de acompanhamento dos resultados que entregamos ↗</a></p>
   <div class="kpi">
@@ -302,7 +344,7 @@ footer .fine{font-size:.72rem;color:var(--muted)}
 </section>
 
 <section>
-  <div class="eyebrow">Como vamos organizar</div>
+  <div class="eyebrow">Oportunidade 1 · Como vamos organizar</div>
   <h2>Cronograma</h2>
   <ol class="timeline">
     <li><span class="w">Semana 1</span><div><h4>Kick-off</h4><p>Uma reunião para entender sua história, seus pacientes, o público que você quer atrair e sua capacidade de agenda. Saímos com prioridades e metas definidas. Ajustes no perfil e primeiros posts no ar.</p></div></li>
@@ -314,8 +356,48 @@ footer .fine{font-size:.72rem;color:var(--muted)}
 </section>
 
 <section>
+  <div class="eyebrow">Oportunidade 2 · 1 mês</div>
+  <h2>Estudo da oportunidade na base de pacientes</h2>
+  <p class="lead">Um estudo do comportamento da sua base: quem são os seus pacientes, quanto valem para o seu negócio, quando voltam e quando somem. A análise parte de quem já é paciente e de quem já te procurou em algum momento.</p>
+  <div class="channels">
+    <div class="ch">
+      <span class="k">Entendimento</span>
+      <h4>Levantamento dos dados</h4>
+      <p>Mapeamos com você quais dados existem hoje, quais precisamos e como organizá-los para a análise.</p>
+    </div>
+    <div class="ch">
+      <span class="k">Diagnóstico</span>
+      <h4>Ciclo de vida do cliente</h4>
+      <p>Ticket médio, valor do cliente, frequência, recência, novos pacientes, inativação e sazonalidade, com o histórico que estiver disponível.</p>
+    </div>
+    <div class="ch">
+      <span class="k">Jornada</span>
+      <h4>Jornada do paciente</h4>
+      <p>O caminho completo do seu paciente, do primeiro contato ao retorno, mostrando onde ele se perde.</p>
+    </div>
+    <div class="ch">
+      <span class="k">Classificação</span>
+      <h4>Base classificada</h4>
+      <p>Critérios, classificações e subclassificações dos pacientes, com as quantidades de cada grupo e a base pronta para você agir.</p>
+    </div>
+    <div class="ch wide">
+      <span class="k">Entrega final</span>
+      <h4>Dossiê de próximos passos</h4>
+      <p>Réguas de relacionamento para cada público, mecânicas de pacotes e estímulos, melhores momentos de abordagem e como retomar contato com pacientes perdidos. Também trazemos orientações para a entrada de novos pacientes, com base no que a sua base mostrar.</p>
+    </div>
+  </div>
+  <ol class="timeline">
+    <li><span class="w">Semana 1</span><div><h4>Reunião de entendimento</h4><p>Conversamos sobre os seus pacientes e os dados disponíveis, e combinamos o formato de envio da base.</p></div></li>
+    <li><span class="w">Semanas 2 e 3</span><div><h4>Análise e classificação</h4><p>Organização da base, cálculo dos indicadores e classificação dos pacientes.</p></div></li>
+    <li><span class="w">Semana 4</span><div><h4>Apresentação do dossiê</h4><p>Reunião para contar a história da sua base e apresentar os próximos passos recomendados.</p></div></li>
+  </ol>
+  <p class="note">O mesmo estudo pode ser refeito a cada 2 ou 3 meses para acompanhar a evolução da base.</p>
+</section>
+
+<section>
   <div class="eyebrow">Investimento</div>
   <h2>Valores</h2>
+  <h3 class="subhead" style="margin-top:0;padding-top:0;border-top:0">Oportunidade 1 · Plano recorrente</h3>
   <div class="price">
     <div class="pcard main">
       <span class="sm">Recorrente · desde o mês 1</span>
@@ -359,11 +441,39 @@ footer .fine{font-size:.72rem;color:var(--muted)}
     </table>
   </div>
 
+  <h3 class="subhead">Oportunidade 2 · Estudo da oportunidade na base de pacientes</h3>
+  <div class="price">
+    <div class="pcard main">
+      <span class="sm">Pontual · 1 mês</span>
+      <h3>Estudo da base</h3>
+      <div class="amt">R$ 1.200</div>
+      <table>
+        <tr><td>Reunião de entendimento</td><td>Incluso</td></tr>
+        <tr><td>Indicadores do ciclo de vida do cliente</td><td>Incluso</td></tr>
+        <tr><td>Jornada do paciente</td><td>Incluso</td></tr>
+        <tr><td>Classificação da base de pacientes</td><td>Incluso</td></tr>
+        <tr><td>Dossiê de próximos passos</td><td>Incluso</td></tr>
+        <tr><td>Reunião de apresentação</td><td>Incluso</td></tr>
+      </table>
+    </div>
+    <div class="pcard">
+      <span class="sm">Opcional · após o estudo</span>
+      <h3>Apoio mensal</h3>
+      <div class="amt">R$ 200 <small>/mês</small></div>
+      <table>
+        <tr><td>Atualização mensal dos indicadores</td><td>Incluso</td></tr>
+        <tr><td>Orientação sobre ações para melhorar os resultados</td><td>Incluso</td></tr>
+      </table>
+    </div>
+  </div>
+
   <div class="panel conds">
     <h3>Condições gerais</h3>
     <p><b>Validade:</b> esta proposta vale por 15 dias a partir do envio.</p>
-    <p><b>Pagamento:</b> o mês 1 (fee + shooting) é pago no início do projeto. Do mês 2 em diante, o fee é cobrado até o dia 5 de cada mês.</p>
-    <p><b>Prazo mínimo:</b> 3 meses, tempo necessário para testar canais e ver o efeito nas consultas.</p>
+    <p><b>Pagamento da Oportunidade 1:</b> o mês 1 (fee + shooting) é pago no início do projeto. Do mês 2 em diante, o fee é cobrado até o dia 5 de cada mês.</p>
+    <p><b>Pagamento da Oportunidade 2:</b> pago no início do projeto. O apoio mensal opcional é cobrado até o dia 5 de cada mês.</p>
+    <p><b>Prazo mínimo da Oportunidade 1:</b> 3 meses, tempo necessário para testar canais e ver o efeito nas consultas.</p>
+    <p><b>Dados da Oportunidade 2:</b> a profundidade do estudo depende dos dados disponíveis na sua base.</p>
     <p><b>Execução:</b> a sua presença em ações presenciais e o envio das mensagens das réguas ficam com você. A Vincla entrega estratégia, roteiros, textos e materiais prontos.</p>
     <p><b>Reajuste:</b> anual, pelo IPCA. <b>Cancelamento:</b> com aviso prévio de 30 dias.</p>
   </div>
@@ -373,10 +483,10 @@ footer .fine{font-size:.72rem;color:var(--muted)}
   <div class="eyebrow">Próximos passos</div>
   <h2>Como seguimos</h2>
   <ol class="steps">
-    <li><b>1</b>Alinhamento final da proposta com você.</li>
+    <li><b>1</b>Escolha da oportunidade e alinhamento final com você.</li>
     <li><b>2</b>Assinatura do contrato com escopo, prazos e condições.</li>
-    <li><b>3</b>Acesso ao Instagram e ao Meta Business Suite.</li>
-    <li><b>4</b>Kick-off já na semana 1.</li>
+    <li><b>3</b>Acesso ao Instagram e ao Meta Business Suite, ou à base de pacientes.</li>
+    <li><b>4</b>Primeira reunião já na semana 1.</li>
   </ol>
 </section>
 
